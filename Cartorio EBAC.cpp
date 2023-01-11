@@ -71,7 +71,7 @@
 		file = fopen(cpf, "r");
 		if(file == NULL)
 		{
-		printf("N„o foi possivel abrir o arquivo. \n"); 
+		printf("N√£o foi possivel abrir o arquivo. \n"); 
 		}
 		while(fgets(conteudo, 200, file)!= NULL)
 		{ 
@@ -95,7 +95,7 @@
 		
 		if(file == NULL)
 		{
-			printf("Usuario n„o encontrado. \n");
+			printf("Usuario n√£o encontrado. \n");
 			system("pause");
 		}
 		
@@ -119,6 +119,7 @@
 			printf("\t1 - Registrar nome \n");
 			printf("\t2 - Consultar nome \n");
 			printf("\t3 - Deletar nome \n");
+			printf("\t4 - Sair do programa \n");
 			scanf("%d", &opcao);
 		
 			system("cls");
@@ -137,7 +138,10 @@
 			deletar();
 			break;
 			
-						
+			case 4:
+			return 0;
+			break;
+					
 			default: 
 			printf ("Escolha uma opcao valida! \n");
 			break;
